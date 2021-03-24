@@ -69,7 +69,7 @@ namespace OsuDbAPI
         private Beatmap readBeatmap()
         {
             int n;
-            if (Version < 20191106)
+            if (Version < 20210316)
                 this.fileReader.ReadInt32();
             Beatmap beatmap = new Beatmap();
             beatmap.ArtistName = this.readNullableString();
